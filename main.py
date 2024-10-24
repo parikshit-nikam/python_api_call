@@ -6,7 +6,7 @@ def main():
 
     try:
         users = client.get_users()
-        print("-------------------------------------------------------") 
+        print("--------------------------------------------------------") 
         for user in users:
             print(f"Asset ID: {user.id}, \nName: {user.name}")
             
@@ -16,7 +16,7 @@ def main():
             else:
                 print("  • No additional data available.")
 
-            print("-------------------------------------------------------")    
+            print("--------------------------------------------------------")    
     except Exception as e:
         print(f"An error occurred: {e}")
 
